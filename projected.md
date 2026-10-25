@@ -2,9 +2,9 @@
 
 ## Direction
 
-Use this AGPL-3.0 f1-dash fork as a private Rust learning project and an engineering portfolio. The goal is a local race-analysis workbench with dependable replay, observable live data, richer driver analysis, and eventually optional local forecasting.
+Use this AGPL-3.0 repository as a private Rust learning project and an engineering portfolio. The goal is a local race-analysis workbench with dependable replay, observable live data, richer driver analysis, and eventually optional local forecasting.
 
-The upstream project remains the foundation for live timing. New work should be isolated into small feature branches, preserve upstream license and copyright notices, and keep the fork mergeable. Do not copy proprietary Nitrous code, assets, or credentials; use independently designed features and observed behavior as inspiration only.
+`cmkhoa/f1-dash` is the canonical repository for this project. New work should be isolated into small branches in that repository. Preserve the AGPL-3.0 license and original copyright notices required by the copied source, but do not fetch from, push to, or plan contributions for the original project. Do not copy proprietary Nitrous code, assets, or credentials; use independently designed features and observed behavior as inspiration only.
 
 ## Sequenced roadmap
 
@@ -73,11 +73,11 @@ The claimed `75.8%` predictive importance of current position is not accepted as
 
 ## Repository workflow
 
-- Work from `upstream/develop` in a focused `feature/...` branch.
+- Start focused `feature/...` branches from the project branch chosen for the work.
 - Use conventional commits and run the smallest relevant Rust test first, then the workspace suite before handoff.
 - Keep local-only recordings out of Git; the upstream `.gitignore` already encourages `.data.txt` recordings to remain untracked.
-- Fetch upstream before starting a substantial feature and resolve drift early.
-- Preserve the AGPL-3.0 license and upstream notices in all public pushes.
+- Treat this repository’s own branches and releases as the project history; external source synchronization is out of scope.
+- Preserve the AGPL-3.0 license and original copyright notices in all public pushes.
 
 ## Portfolio milestones
 
