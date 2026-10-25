@@ -4,7 +4,7 @@
 
 Use this AGPL-3.0 repository as a private Rust learning project and an engineering portfolio. The goal is a local race-analysis workbench with dependable replay, observable live data, richer driver analysis, and eventually optional local forecasting.
 
-`cmkhoa/f1-dash` is the canonical repository for this project. New work should be isolated into small branches in that repository. Preserve the AGPL-3.0 license and original copyright notices required by the copied source, but do not fetch from, push to, or plan contributions for the original project. Do not copy proprietary Nitrous code, assets, or credentials; use independently designed features and observed behavior as inspiration only.
+`cmkhoa/f1-dash` is the canonical repository for this project. Work is committed directly to its `main` branch. Preserve the AGPL-3.0 license and original copyright notices required by the copied source, but do not fetch from, push to, or plan contributions for the original project. Do not copy proprietary Nitrous code, assets, or credentials; use independently designed features and observed behavior as inspiration only.
 
 ## Sequenced roadmap
 
@@ -73,7 +73,7 @@ The claimed `75.8%` predictive importance of current position is not accepted as
 
 ## Repository workflow
 
-- Start focused `feature/...` branches from the project branch chosen for the work.
+- Commit focused, reviewable changes directly to `main`.
 - Use conventional commits and run the smallest relevant Rust test first, then the workspace suite before handoff.
 - Keep local-only recordings out of Git; the upstream `.gitignore` already encourages `.data.txt` recordings to remain untracked.
 - Treat this repository’s own branches and releases as the project history; external source synchronization is out of scope.
